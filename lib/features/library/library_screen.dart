@@ -9,11 +9,10 @@ import 'package:habla/widgets/dialogs/input_dialog.dart';
 // ---------------------------------------------------------------------------
 
 class _Symbol {
-  const _Symbol({required this.id, required this.name, this.imageUrl});
+  const _Symbol({required this.id, required this.name});
 
   final String id;
   final String name;
-  final String? imageUrl;
 }
 
 class _Collection {

@@ -52,7 +52,7 @@ android {
 
     defaultConfig {
         applicationId "com.habla.aac"
-        minSdk 23
+        minSdkVersion flutter.minSdkVersion
         targetSdk 34
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName

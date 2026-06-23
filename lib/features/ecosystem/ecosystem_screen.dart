@@ -289,7 +289,7 @@ class _AutomationsTab extends ConsumerWidget {
                       ),
                       Switch(
                         value: isEnabled,
-                        activeColor: AppColors.inkTeal,
+                        activeThumbColor: AppColors.inkTeal,
                         onChanged: (v) {
                           notifier.update((state) => {...state, auto.id: v});
                         },

@@ -141,8 +141,7 @@ class EditorNotifier extends StateNotifier<EditorState> {
     _pushUndo();
     final list = [...state.items];
     final item = list.removeAt(oldIndex);
-    final idx = newIndex > oldIndex ? newIndex - 1 : newIndex;
-    list.insert(idx, item);
+    list.insert(newIndex, item);
     state = state.copyWith(
       items: list
           .asMap()
@@ -332,12 +331,11 @@ class _EditorScreenState extends ConsumerState<EditorScreen>
           tooltip: 'Guardar',
           onPressed: edState.isDirty
               ? () async {
+                  final messenger = ScaffoldMessenger.of(context);
                   await ref.read(editorBoardProvider.notifier).save();
-                  if (mounted) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Tablero guardado')),
-                    );
-                  }
+                  messenger.showSnackBar(
+                    const SnackBar(content: Text('Tablero guardado')),
+                  );
                 }
               : null,
         ),
@@ -619,7 +617,7 @@ class _EditorGrid extends ConsumerWidget {
                 _showItemSheet(context, items[i], ref),
           ),
         ),
-        onReorder: (oldIdx, newIdx) =>
+        onReorderItem: (oldIdx, newIdx) =>
             ref.read(editorBoardProvider.notifier).moveItem(oldIdx, newIdx),
       );
     }
@@ -1109,7 +1107,7 @@ class _ContentInspectorState extends State<_ContentInspector> {
 
         _Label('Categoría'),
         DropdownButtonFormField<String>(
-          value: categories.contains(_category) ? _category : 'nouns',
+          initialValue: categories.contains(_category) ? _category : 'nouns',
           decoration: const InputDecoration(isDense: true),
           items: categories
               .map((c) => DropdownMenuItem(
@@ -1286,32 +1284,40 @@ class _ActionInspectorState extends State<_ActionInspector> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         _Label('Tipo de acción'),
-        RadioListTile<String>(
-          dense: true,
-          contentPadding: EdgeInsets.zero,
-          title: const Text('Pronunciar texto'),
-          value: 'speak',
+        RadioGroup<String>(
           groupValue: _actionType,
-          activeColor: AppColors.inkTeal,
-          onChanged: (v) => setState(() => _actionType = v!),
-        ),
-        RadioListTile<String>(
-          dense: true,
-          contentPadding: EdgeInsets.zero,
-          title: const Text('Abrir tablero'),
-          value: 'board_link',
-          groupValue: _actionType,
-          activeColor: AppColors.inkTeal,
-          onChanged: (v) => setState(() => _actionType = v!),
-        ),
-        RadioListTile<String>(
-          dense: true,
-          contentPadding: EdgeInsets.zero,
-          title: const Text('Acción personalizada'),
-          value: 'custom',
-          groupValue: _actionType,
-          activeColor: AppColors.inkTeal,
-          onChanged: (v) => setState(() => _actionType = v!),
+          onChanged: (v) { if (v != null) setState(() => _actionType = v); },
+          child: Column(
+            children: [
+              RadioListTile<String>(
+                dense: true,
+                contentPadding: EdgeInsets.zero,
+                title: const Text('Pronunciar texto'),
+                value: 'speak',
+                fillColor: WidgetStateProperty.resolveWith(
+                  (s) => s.contains(WidgetState.selected) ? AppColors.inkTeal : AppColors.grey400,
+                ),
+              ),
+              RadioListTile<String>(
+                dense: true,
+                contentPadding: EdgeInsets.zero,
+                title: const Text('Abrir tablero'),
+                value: 'board_link',
+                fillColor: WidgetStateProperty.resolveWith(
+                  (s) => s.contains(WidgetState.selected) ? AppColors.inkTeal : AppColors.grey400,
+                ),
+              ),
+              RadioListTile<String>(
+                dense: true,
+                contentPadding: EdgeInsets.zero,
+                title: const Text('Acción personalizada'),
+                value: 'custom',
+                fillColor: WidgetStateProperty.resolveWith(
+                  (s) => s.contains(WidgetState.selected) ? AppColors.inkTeal : AppColors.grey400,
+                ),
+              ),
+            ],
+          ),
         ),
         const SizedBox(height: 16),
 

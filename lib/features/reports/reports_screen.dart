@@ -186,7 +186,7 @@ class ReportsScreen extends ConsumerWidget {
                         ...state.sections.entries.map((entry) => SwitchListTile(
                               title: Text(entry.key),
                               value: entry.value,
-                              activeColor: AppColors.inkTeal,
+                              activeThumbColor: AppColors.inkTeal,
                               onChanged: (_) => notifier.toggleSection(entry.key),
                               contentPadding: EdgeInsets.zero,
                             )),

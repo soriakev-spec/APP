@@ -253,7 +253,7 @@ class _CreateBoardScreenState extends ConsumerState<CreateBoardScreen> {
                   ?.copyWith(fontWeight: FontWeight.w600)),
           const SizedBox(height: 8),
           DropdownButtonFormField<String>(
-            value: _selectedProfileId,
+            initialValue: _selectedProfileId,
             decoration: const InputDecoration(
               hintText: 'Seleccionar perfil…',
             ),
