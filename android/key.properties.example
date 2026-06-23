@@ -1,0 +1,48 @@
+# =============================================================================
+# Habla AAC — Android Signing Configuration
+# =============================================================================
+#
+# INSTRUCTIONS
+# ------------
+# 1. Copy this file to `android/key.properties` (same directory).
+# 2. Fill in the values below with your actual keystore details.
+# 3. NEVER commit `key.properties` to version control.
+#    It is already listed in the root `.gitignore`.
+#
+# HOW TO GENERATE A KEYSTORE (first time)
+# ----------------------------------------
+# Run the following command from the project root:
+#
+#   keytool -genkey -v \
+#     -keystore android/upload-keystore.jks \
+#     -keyalg RSA -keysize 2048 -validity 10000 \
+#     -alias upload \
+#     -storepass <YOUR_STORE_PASSWORD> \
+#     -keypass <YOUR_KEY_PASSWORD> \
+#     -dname "CN=Habla AAC, OU=Mobile, O=Habla, L=Mexico City, ST=CDMX, C=MX"
+#
+# Store the generated .jks file securely (e.g. a password manager or CI secrets).
+# Do NOT commit the .jks file to version control either.
+#
+# CI / CD
+# -------
+# In your CI pipeline, write the key.properties content from a secret
+# environment variable before the build step. Example (GitHub Actions):
+#
+#   - name: Write key.properties
+#     run: echo "${{ secrets.KEY_PROPERTIES }}" > android/key.properties
+#
+# =============================================================================
+
+# Alias used when the keystore was created (e.g. "upload" for Play Store)
+keyAlias=upload
+
+# Password for the key entry (set during keytool -genkey)
+keyPassword=YOUR_KEY_PASSWORD_HERE
+
+# Path to the .jks keystore file, relative to the android/ directory.
+# Example: ../upload-keystore.jks  (file sits at project root)
+storeFile=../upload-keystore.jks
+
+# Password for the keystore itself (set during keytool -genkey)
+storePassword=YOUR_STORE_PASSWORD_HERE

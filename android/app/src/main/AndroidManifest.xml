@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.habla.aac">
+
+    <!-- ==================== PERMISSIONS ==================== -->
+
+    <!-- Required: network access for symbol sync and AI features -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Required: check connectivity before making network requests -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Required: voice input / speech recognition for AAC input modalities -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- FUTURE: camera for visual scene images and symbol photos -->
+    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+
+    <!-- FUTURE: Bluetooth speaker/switch access support -->
+    <!-- <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> -->
+
+    <!-- ==================== HARDWARE FEATURES ==================== -->
+
+    <!-- Tablet-optimized: target large screens; these are not required to install -->
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <!-- Microphone feature declaration (pairs with RECORD_AUDIO) -->
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <!-- ==================== APPLICATION ==================== -->
+
+    <application
+        android:name="${applicationName}"
+        android:label="Habla"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/LaunchTheme">
+
+        <!-- ==================== MAIN ACTIVITY ==================== -->
+
+        <activity
+            android:name="io.flutter.embedding.android.FlutterActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize"
+            android:resizeableActivity="true">
+
+            <!-- Show normal (non-launch) theme once Flutter has drawn its first frame -->
+            <meta-data
+                android:name="io.flutter.embedding.android.NormalTheme"
+                android:resource="@style/NormalTheme" />
+
+            <!-- Tablet: enable multi-window / split-screen support -->
+            <meta-data
+                android:name="android.allow_multiple_resumed_activities"
+                android:value="true" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Flutter embedding version — do not remove -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
+    </application>
+
+    <!-- ==================== QUERIES ==================== -->
+
+    <!-- Required to query activities that can process text (Flutter engine) -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT" />
+            <data android:mimeType="text/plain" />
+        </intent>
+        <!-- TTS engines -->
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+        <!-- Browser for URL launcher -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <!-- ==================== LARGE SCREEN LAYOUT ==================== -->
+
+    <!--
+        Declare that the app supports large screens.
+        The Play Store uses these declarations for tablet filtering.
+    -->
+    <supports-screens
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"
+        android:requiresSmallestWidthDp="320"
+        android:compatibleWidthLimitDp="720" />
+
+</manifest>

@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "activities": [
+    {
+      "id": "act_image_word",
+      "title": "Asociación Imagen-Palabra",
+      "type": "image_word",
+      "profiles": ["autism", "child", "down_syndrome", "general"],
+      "ageGroups": ["child", "teen"],
+      "description": "Relaciona cada imagen con su palabra correcta",
+      "quizzes": [
+        {
+          "id": "q_animals",
+          "title": "Animales",
+          "questions": [
+            {"id": "q1", "prompt": "¿Cuál es este animal?", "correctAnswer": "Perro", "distractors": ["Gato", "Pájaro", "Pez"]},
+            {"id": "q2", "prompt": "¿Cuál es este animal?", "correctAnswer": "Gato", "distractors": ["Perro", "Pájaro", "Pez"]},
+            {"id": "q3", "prompt": "¿Cuál es este animal?", "correctAnswer": "Pájaro", "distractors": ["Perro", "Gato", "Pez"]},
+            {"id": "q4", "prompt": "¿Cuál es este animal?", "correctAnswer": "Pez", "distractors": ["Perro", "Gato", "Pájaro"]},
+            {"id": "q5", "prompt": "¿Cuál es este animal?", "correctAnswer": "Vaca", "distractors": ["Caballo", "Oveja", "Cerdo"]}
+          ]
+        },
+        {
+          "id": "q_food",
+          "title": "Comida",
+          "questions": [
+            {"id": "q1", "prompt": "¿Qué es esto?", "correctAnswer": "Manzana", "distractors": ["Naranja", "Plátano", "Uvas"]},
+            {"id": "q2", "prompt": "¿Qué es esto?", "correctAnswer": "Naranja", "distractors": ["Manzana", "Plátano", "Pera"]},
+            {"id": "q3", "prompt": "¿Qué es esto?", "correctAnswer": "Leche", "distractors": ["Agua", "Jugo", "Refresco"]},
+            {"id": "q4", "prompt": "¿Qué es esto?", "correctAnswer": "Pan", "distractors": ["Galleta", "Pastel", "Tortilla"]},
+            {"id": "q5", "prompt": "¿Qué es esto?", "correctAnswer": "Arroz", "distractors": ["Pasta", "Frijoles", "Sopa"]}
+          ]
+        },
+        {
+          "id": "q_objects",
+          "title": "Objetos",
+          "questions": [
+            {"id": "q1", "prompt": "¿Qué es esto?", "correctAnswer": "Silla", "distractors": ["Mesa", "Cama", "Sofá"]},
+            {"id": "q2", "prompt": "¿Qué es esto?", "correctAnswer": "Pelota", "distractors": ["Juguete", "Cubo", "Muñeca"]},
+            {"id": "q3", "prompt": "¿Qué es esto?", "correctAnswer": "Libro", "distractors": ["Cuaderno", "Lápiz", "Mochila"]},
+            {"id": "q4", "prompt": "¿Qué es esto?", "correctAnswer": "Zapato", "distractors": ["Calcetín", "Pantalón", "Camisa"]},
+            {"id": "q5", "prompt": "¿Qué es esto?", "correctAnswer": "Carro", "distractors": ["Camión", "Bicicleta", "Avión"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act_complete_phrase",
+      "title": "Completar Frases",
+      "type": "complete_phrase",
+      "profiles": ["autism", "child", "aphasia", "general"],
+      "ageGroups": ["child", "teen", "adult"],
+      "description": "Completa la frase eligiendo la palabra correcta",
+      "quizzes": [
+        {
+          "id": "q_daily",
+          "title": "Vida diaria",
+          "questions": [
+            {"id": "q1", "prompt": "Quiero ___ agua", "correctAnswer": "beber", "distractors": ["comer", "dormir", "jugar"]},
+            {"id": "q2", "prompt": "Tengo ___ de dormir", "correctAnswer": "ganas", "distractors": ["tiempo", "miedo", "hambre"]},
+            {"id": "q3", "prompt": "Me duele la ___", "correctAnswer": "cabeza", "distractors": ["mano", "mesa", "puerta"]},
+            {"id": "q4", "prompt": "Quiero ir al ___", "correctAnswer": "baño", "distractors": ["parque", "doctor", "carro"]},
+            {"id": "q5", "prompt": "Tengo ___ de comer", "correctAnswer": "hambre", "distractors": ["sed", "frío", "sueño"]}
+          ]
+        },
+        {
+          "id": "q_emotions",
+          "title": "Emociones",
+          "questions": [
+            {"id": "q1", "prompt": "Estoy muy ___", "correctAnswer": "feliz", "distractors": ["rojo", "grande", "rápido"]},
+            {"id": "q2", "prompt": "Me siento ___", "correctAnswer": "triste", "distractors": ["azul", "nuevo", "lejos"]},
+            {"id": "q3", "prompt": "Tengo ___ de la oscuridad", "correctAnswer": "miedo", "distractors": ["hambre", "sed", "sueño"]},
+            {"id": "q4", "prompt": "Estoy ___", "correctAnswer": "enojado", "distractors": ["comiendo", "durmiendo", "jugando"]},
+            {"id": "q5", "prompt": "Me siento muy ___", "correctAnswer": "cansado", "distractors": ["nuevo", "alto", "verde"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act_emotions",
+      "title": "Identificar Emociones",
+      "type": "emotions",
+      "profiles": ["autism", "child", "general"],
+      "ageGroups": ["early", "child", "teen"],
+      "description": "Identifica la emoción en cada imagen o descripción",
+      "quizzes": [
+        {
+          "id": "q_basic_emotions",
+          "title": "Emociones básicas",
+          "questions": [
+            {"id": "q1", "prompt": "La persona está sonriendo. ¿Cómo se siente?", "correctAnswer": "Feliz", "distractors": ["Triste", "Enojado", "Asustado"]},
+            {"id": "q2", "prompt": "La persona está llorando. ¿Cómo se siente?", "correctAnswer": "Triste", "distractors": ["Feliz", "Sorprendido", "Aburrido"]},
+            {"id": "q3", "prompt": "La persona tiene las cejas fruncidas. ¿Cómo se siente?", "correctAnswer": "Enojado", "distractors": ["Feliz", "Tranquilo", "Emocionado"]},
+            {"id": "q4", "prompt": "La persona tiene los ojos muy abiertos y se tapa la boca. ¿Cómo se siente?", "correctAnswer": "Sorprendido", "distractors": ["Aburrido", "Triste", "Enojado"]},
+            {"id": "q5", "prompt": "La persona está mirando al piso sin expresión. ¿Cómo se siente?", "correctAnswer": "Aburrido", "distractors": ["Feliz", "Asustado", "Emocionado"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act_categorization",
+      "title": "Categorización",
+      "type": "categorization",
+      "profiles": ["autism", "child", "general"],
+      "ageGroups": ["child", "teen"],
+      "description": "Clasifica los elementos en la categoría correcta",
+      "quizzes": [
+        {
+          "id": "q_food_cat",
+          "title": "¿Es comida o bebida?",
+          "questions": [
+            {"id": "q1", "prompt": "Leche", "correctAnswer": "Bebida", "distractors": ["Comida", "Juguete", "Ropa"]},
+            {"id": "q2", "prompt": "Pan", "correctAnswer": "Comida", "distractors": ["Bebida", "Juguete", "Animal"]},
+            {"id": "q3", "prompt": "Jugo de naranja", "correctAnswer": "Bebida", "distractors": ["Comida", "Ropa", "Animal"]},
+            {"id": "q4", "prompt": "Manzana", "correctAnswer": "Comida", "distractors": ["Bebida", "Juguete", "Ropa"]},
+            {"id": "q5", "prompt": "Agua", "correctAnswer": "Bebida", "distractors": ["Comida", "Juguete", "Animal"]}
+          ]
+        },
+        {
+          "id": "q_animals_vs_objects",
+          "title": "¿Es animal u objeto?",
+          "questions": [
+            {"id": "q1", "prompt": "Perro", "correctAnswer": "Animal", "distractors": ["Objeto", "Comida", "Ropa"]},
+            {"id": "q2", "prompt": "Mesa", "correctAnswer": "Objeto", "distractors": ["Animal", "Comida", "Persona"]},
+            {"id": "q3", "prompt": "Gato", "correctAnswer": "Animal", "distractors": ["Objeto", "Comida", "Lugar"]},
+            {"id": "q4", "prompt": "Silla", "correctAnswer": "Objeto", "distractors": ["Animal", "Comida", "Ropa"]},
+            {"id": "q5", "prompt": "Pájaro", "correctAnswer": "Animal", "distractors": ["Objeto", "Ropa", "Lugar"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act_yes_no",
+      "title": "Sí/No Rápido",
+      "type": "yes_no_als",
+      "profiles": ["als", "cerebral_palsy"],
+      "ageGroups": ["teen", "adult"],
+      "description": "Responde Sí o No a cada pregunta rápidamente",
+      "quizzes": [
+        {
+          "id": "q_basic_yes_no",
+          "title": "Preguntas básicas",
+          "questions": [
+            {"id": "q1", "prompt": "¿Tienes hambre ahora?", "correctAnswer": "Depende", "distractors": []},
+            {"id": "q2", "prompt": "¿El cielo es azul?", "correctAnswer": "Sí", "distractors": ["No"]},
+            {"id": "q3", "prompt": "¿Los perros maúllan?", "correctAnswer": "No", "distractors": ["Sí"]},
+            {"id": "q4", "prompt": "¿El agua está fría o caliente?", "correctAnswer": "Depende", "distractors": []},
+            {"id": "q5", "prompt": "¿Hoy es de día?", "correctAnswer": "Sí", "distractors": ["No"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act_visual_sequences",
+      "title": "Secuencias Visuales",
+      "type": "visual_sequences",
+      "profiles": ["autism", "child", "general"],
+      "ageGroups": ["child", "teen"],
+      "description": "Ordena los pasos en el orden correcto",
+      "quizzes": [
+        {
+          "id": "q_wash_hands",
+          "title": "Lavarse las manos",
+          "questions": [
+            {"id": "q1", "prompt": "¿Cuál es el primer paso para lavarse las manos?", "correctAnswer": "Abrir la llave", "distractors": ["Aplicar jabón", "Enjuagar", "Secar"]},
+            {"id": "q2", "prompt": "¿Qué hacemos después de abrir la llave?", "correctAnswer": "Aplicar jabón", "distractors": ["Secar", "Cerrar la llave", "Peinar"]},
+            {"id": "q3", "prompt": "¿Cuál es el último paso?", "correctAnswer": "Secar las manos", "distractors": ["Abrir la llave", "Aplicar jabón", "Frotar"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act_requests",
+      "title": "Hacer Peticiones",
+      "type": "requests",
+      "profiles": ["autism", "child", "cerebral_palsy"],
+      "ageGroups": ["early", "child"],
+      "description": "Practica cómo pedir lo que necesitas",
+      "quizzes": [
+        {
+          "id": "q_food_requests",
+          "title": "Pedir comida",
+          "questions": [
+            {"id": "q1", "prompt": "Tienes hambre. ¿Qué dices?", "correctAnswer": "Quiero comer", "distractors": ["Tengo sueño", "Quiero jugar", "Estoy feliz"]},
+            {"id": "q2", "prompt": "Tienes sed. ¿Qué pides?", "correctAnswer": "Quiero agua", "distractors": ["Quiero dormir", "Tengo frío", "Quiero salir"]},
+            {"id": "q3", "prompt": "Quieres más comida. ¿Qué dices?", "correctAnswer": "Más, por favor", "distractors": ["Ya terminé", "No quiero", "Estoy lleno"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act_functional_communication",
+      "title": "Comunicación Funcional",
+      "type": "functional_communication",
+      "profiles": ["autism", "child", "general"],
+      "ageGroups": ["early", "child"],
+      "description": "Practica comunicar necesidades y sentimientos básicos",
+      "quizzes": [
+        {
+          "id": "q_needs",
+          "title": "Expresar necesidades",
+          "questions": [
+            {"id": "q1", "prompt": "¿Cómo dices que quieres ayuda?", "correctAnswer": "Ayuda, por favor", "distractors": ["No quiero", "Estoy bien", "Gracias"]},
+            {"id": "q2", "prompt": "¿Cómo dices que no quieres algo?", "correctAnswer": "No, gracias", "distractors": ["Sí, por favor", "Quiero más", "Ayuda"]},
+            {"id": "q3", "prompt": "Algo te duele. ¿Qué dices?", "correctAnswer": "Me duele", "distractors": ["Estoy feliz", "Quiero jugar", "Tengo hambre"]}
+          ]
+        }
+      ]
+    }
+  ]
+}

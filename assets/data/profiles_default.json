@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "profiles": [
+    {
+      "id": "tpl_autism",
+      "name": "Niño con Autismo",
+      "avatarEmoji": "🧩",
+      "diagnosis": "autism",
+      "disposition": "pictograms",
+      "gridSize": 15,
+      "vocabularyType": "core_first",
+      "language": "es-MX",
+      "description": "Perfil optimizado para CAA en autismo usando vocabulario núcleo primero (Core First). Incluye pictogramas de alta frecuencia organizados por categorías Fitzgerald.",
+      "isDefault": true
+    },
+    {
+      "id": "tpl_aphasia",
+      "name": "Persona con Afasia",
+      "avatarEmoji": "💬",
+      "diagnosis": "aphasia",
+      "disposition": "pictograms",
+      "gridSize": 8,
+      "vocabularyType": "aphasia",
+      "language": "es-MX",
+      "description": "Perfil para personas con afasia post-ACV. Énfasis en vocabulario de comunicación funcional, escenas visuales y frases de alta frecuencia.",
+      "isDefault": false
+    },
+    {
+      "id": "tpl_als",
+      "name": "Persona con ELA",
+      "avatarEmoji": "🖐️",
+      "diagnosis": "als",
+      "disposition": "keyboard",
+      "gridSize": 30,
+      "vocabularyType": "als",
+      "language": "es-MX",
+      "description": "Perfil para esclerosis lateral amiotrófica. Optimizado para acceso rápido con teclado predictivo y vocabulario de alta eficiencia. Compatible con acceso por pulsador.",
+      "isDefault": false
+    },
+    {
+      "id": "tpl_cerebral_palsy",
+      "name": "Parálisis Cerebral",
+      "avatarEmoji": "⭐",
+      "diagnosis": "cerebral_palsy",
+      "disposition": "pictograms",
+      "gridSize": 9,
+      "vocabularyType": "core_first",
+      "language": "es-MX",
+      "description": "Perfil para parálisis cerebral. Botones grandes, vocabulario núcleo y compatibilidad con barrido automático y pulsadores.",
+      "isDefault": false
+    },
+    {
+      "id": "tpl_down_syndrome",
+      "name": "Síndrome de Down",
+      "avatarEmoji": "🌟",
+      "diagnosis": "down_syndrome",
+      "disposition": "pictograms",
+      "gridSize": 9,
+      "vocabularyType": "core_first",
+      "language": "es-MX",
+      "description": "Perfil para síndrome de Down. Vocabulario visual y pictogramas ARASAAC organizados por contextos de vida cotidiana.",
+      "isDefault": false
+    },
+    {
+      "id": "tpl_child",
+      "name": "Niño General",
+      "avatarEmoji": "🧒",
+      "diagnosis": "child",
+      "disposition": "pictograms",
+      "gridSize": 15,
+      "vocabularyType": "core_first",
+      "language": "es-MX",
+      "description": "Perfil general para niños. Vocabulario amplio con pictogramas, adecuado para diversas necesidades de comunicación aumentativa.",
+      "isDefault": false
+    },
+    {
+      "id": "tpl_adult",
+      "name": "Adulto General",
+      "avatarEmoji": "🧑",
+      "diagnosis": "adult_general",
+      "disposition": "pictograms",
+      "gridSize": 30,
+      "vocabularyType": "custom",
+      "language": "es-MX",
+      "description": "Perfil general para adultos. Vocabulario expandido con frases de contextos profesionales, sociales y de vida independiente.",
+      "isDefault": false
+    }
+  ]
+}

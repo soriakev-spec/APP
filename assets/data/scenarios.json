@@ -1,0 +1,1571 @@
+{
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "doctor",
+      "title": "Doctor",
+      "category": "salud",
+      "imagePlaceholder": "doctor",
+      "sections": {
+        "phrases": [
+          "Tengo dolor de cabeza",
+          "Me duele el estómago",
+          "Me duele aquí",
+          "No me siento bien",
+          "Tengo fiebre",
+          "Tengo tos",
+          "Tengo gripa",
+          "Me duele la garganta",
+          "Tengo vómito",
+          "No puedo dormir"
+        ],
+        "questions": [
+          "¿Qué tengo?",
+          "¿Me va a doler?",
+          "¿Cuánto tiempo tarda?",
+          "¿Tengo que tomar medicina?",
+          "¿Cuándo me mejoro?",
+          "¿Tengo que quedarme en cama?",
+          "¿Puedo ir a la escuela?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Un poco",
+          "Mucho",
+          "No sé",
+          "Tal vez",
+          "Allá"
+        ],
+        "comments": [
+          "Gracias doctor",
+          "Ya me siento mejor",
+          "Sigo igual",
+          "Me siento peor",
+          "Gracias por ayudarme"
+        ],
+        "emotions": [
+          "Tengo miedo",
+          "Estoy nervioso",
+          "Me duele mucho",
+          "Estoy asustado",
+          "Me siento raro"
+        ],
+        "emergency": [
+          "Llamen una ambulancia",
+          "Necesito ayuda urgente",
+          "No puedo respirar",
+          "Llamen al 911",
+          "Es una emergencia"
+        ],
+        "social": [
+          "¿Cómo se llama usted?",
+          "Mucho gusto",
+          "Gracias",
+          "¿Puedo sentarme?",
+          "¿Tardamos mucho?"
+        ]
+      }
+    },
+    {
+      "id": "dentista",
+      "title": "Dentista",
+      "category": "salud",
+      "imagePlaceholder": "dentist",
+      "sections": {
+        "phrases": [
+          "Me duele un diente",
+          "Tengo caries",
+          "Me sangra la encía",
+          "Se me cayó un diente",
+          "Tengo un diente flojo",
+          "Me duele cuando como",
+          "Necesito limpieza"
+        ],
+        "questions": [
+          "¿Va a doler?",
+          "¿Cuánto tiempo tardan?",
+          "¿Qué me van a hacer?",
+          "¿Necesito regresar?",
+          "¿Me van a poner anestesia?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Un poco",
+          "Mucho",
+          "No sé"
+        ],
+        "comments": [
+          "Gracias",
+          "Ya pasó",
+          "Estuvo bien",
+          "No estuvo tan feo",
+          "Sí dolió un poco"
+        ],
+        "emotions": [
+          "Tengo miedo",
+          "Estoy nervioso",
+          "No me gusta",
+          "Quiero que venga mi mamá",
+          "No quiero que me duela"
+        ],
+        "emergency": [
+          "Me duele mucho",
+          "Para por favor",
+          "Necesito un descanso",
+          "Algo salió mal"
+        ],
+        "social": [
+          "Hola",
+          "Mucho gusto",
+          "¿Cómo se llama?",
+          "Gracias por su ayuda",
+          "Hasta luego"
+        ]
+      }
+    },
+    {
+      "id": "hospital",
+      "title": "Hospital",
+      "category": "salud",
+      "imagePlaceholder": "hospital",
+      "sections": {
+        "phrases": [
+          "Necesito ayuda",
+          "Estoy internado",
+          "No me siento bien",
+          "Me duele mucho",
+          "Necesito al médico",
+          "Quiero ver a mi familia",
+          "No puedo dormir",
+          "Tengo hambre",
+          "Tengo sed",
+          "Necesito ir al baño"
+        ],
+        "questions": [
+          "¿Cuándo me dan de alta?",
+          "¿Qué me están dando?",
+          "¿Dónde estoy?",
+          "¿Quién es el médico?",
+          "¿Puedo llamar a mi familia?",
+          "¿Cuándo regresa la enfermera?",
+          "¿Qué me van a hacer?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Un poco",
+          "Mucho",
+          "Aquí",
+          "Allá",
+          "No sé"
+        ],
+        "comments": [
+          "Gracias",
+          "Me siento mejor",
+          "Sigo con dolor",
+          "Ya me quiero ir a casa",
+          "Estoy asustado"
+        ],
+        "emotions": [
+          "Tengo miedo",
+          "Estoy solo",
+          "Extraño mi casa",
+          "Estoy triste",
+          "Estoy ansioso"
+        ],
+        "emergency": [
+          "Llamen a la enfermera",
+          "Es urgente",
+          "No puedo respirar",
+          "Me duele el pecho",
+          "Necesito ayuda ahora"
+        ],
+        "social": [
+          "Gracias enfermera",
+          "Gracias doctor",
+          "¿Cómo se llama?",
+          "Mucho gusto",
+          "Hasta mañana"
+        ]
+      }
+    },
+    {
+      "id": "aula",
+      "title": "Aula",
+      "category": "educacion",
+      "imagePlaceholder": "classroom",
+      "sections": {
+        "phrases": [
+          "Necesito ayuda",
+          "No entendí",
+          "Ya terminé",
+          "Quiero participar",
+          "Tengo la respuesta",
+          "No sé la respuesta",
+          "¿Puedo ir al baño?",
+          "Me siento cansado",
+          "No traje mi tarea"
+        ],
+        "questions": [
+          "¿Puedes repetir?",
+          "¿Qué hay de tarea?",
+          "¿Qué hacemos hoy?",
+          "¿Cuándo es el examen?",
+          "¿Con quién trabajo?",
+          "¿Qué página?"
+        ],
+        "answers": [
+          "Sí maestra",
+          "No maestra",
+          "Ya entendí",
+          "Todavía no",
+          "Aquí",
+          "Listo"
+        ],
+        "comments": [
+          "Me gusta esta clase",
+          "Esto es difícil",
+          "Esto es fácil",
+          "Qué interesante",
+          "No me gusta"
+        ],
+        "emotions": [
+          "Estoy nervioso",
+          "Estoy emocionado",
+          "Estoy aburrido",
+          "Me siento bien",
+          "Me siento mal"
+        ],
+        "emergency": [
+          "Me están molestando",
+          "Alguien me lastimó",
+          "Necesito salir",
+          "Necesito a la maestra"
+        ],
+        "social": [
+          "Hola compañero",
+          "¿Me prestas tu lápiz?",
+          "¿Jugamos juntos?",
+          "Gracias",
+          "Trabajemos juntos"
+        ]
+      }
+    },
+    {
+      "id": "restaurante",
+      "title": "Restaurante",
+      "category": "social",
+      "imagePlaceholder": "restaurant",
+      "sections": {
+        "phrases": [
+          "Una mesa para dos",
+          "Quiero ordenar",
+          "Quiero el menú",
+          "Quiero agua",
+          "Para llevar",
+          "Para comer aquí",
+          "Ya elegí",
+          "La cuenta por favor",
+          "Está muy rico",
+          "No me gustó"
+        ],
+        "questions": [
+          "¿Qué tienen de comer?",
+          "¿Está picante?",
+          "¿Tienen opciones sin gluten?",
+          "¿Cuánto cuesta?",
+          "¿Dónde está el baño?",
+          "¿Cuánto tardan?"
+        ],
+        "answers": [
+          "Sí por favor",
+          "No gracias",
+          "Un poco",
+          "Con todo",
+          "Sin cebolla",
+          "Sin picante"
+        ],
+        "comments": [
+          "Muy rico",
+          "Está buenísimo",
+          "Está frío",
+          "Me trajeron lo incorrecto",
+          "Gracias mesero"
+        ],
+        "emotions": [
+          "Tengo mucha hambre",
+          "Estoy emocionado",
+          "Me gusta este lugar",
+          "Hay mucho ruido",
+          "Estoy cómodo"
+        ],
+        "emergency": [
+          "Soy alérgico",
+          "Esto no era lo que pedí",
+          "Necesito ayuda",
+          "Me siento mal"
+        ],
+        "social": [
+          "Buen provecho",
+          "¿Cómo estuvo?",
+          "Excelente servicio",
+          "Muchas gracias",
+          "Hasta luego"
+        ]
+      }
+    },
+    {
+      "id": "comida_rapida",
+      "title": "Comida Rápida",
+      "category": "social",
+      "imagePlaceholder": "fast_food",
+      "sections": {
+        "phrases": [
+          "Quiero una hamburguesa",
+          "Quiero tacos",
+          "Quiero papas fritas",
+          "Quiero refresco",
+          "Quiero una orden de nuggets",
+          "Para llevar",
+          "Aquí en el local",
+          "Con extra queso",
+          "Sin cebolla",
+          "Quiero la cajita feliz"
+        ],
+        "questions": [
+          "¿Qué traen las papas?",
+          "¿Está disponible?",
+          "¿Cuánto cuesta?",
+          "¿Tienen juguete?",
+          "¿Tienen opción sin carne?",
+          "¿Aceptan tarjeta?"
+        ],
+        "answers": [
+          "Eso mismo",
+          "Sí",
+          "No",
+          "Tamaño grande",
+          "Tamaño chico",
+          "Sin hielo"
+        ],
+        "comments": [
+          "Está muy bueno",
+          "Falta sal",
+          "Está frío",
+          "Me equivoqué en mi orden",
+          "Gracias"
+        ],
+        "emotions": [
+          "Tengo mucha hambre",
+          "Qué rico",
+          "Me encanta",
+          "Quiero más",
+          "Ya estoy satisfecho"
+        ],
+        "emergency": [
+          "Pedí otra cosa",
+          "Necesito ayuda",
+          "Hay algo raro",
+          "Soy alérgico"
+        ],
+        "social": [
+          "Gracias",
+          "Buen provecho",
+          "¿Tienen servilletas?",
+          "¿Dónde me siento?",
+          "Hasta luego"
+        ]
+      }
+    },
+    {
+      "id": "cafeteria",
+      "title": "Cafetería Escolar",
+      "category": "educacion",
+      "imagePlaceholder": "cafeteria",
+      "sections": {
+        "phrases": [
+          "Tengo hambre",
+          "Quiero el menú del día",
+          "Quiero leche",
+          "Quiero fruta",
+          "No me gusta eso",
+          "Quiero más",
+          "Ya terminé",
+          "Puedo tirar mi bandeja"
+        ],
+        "questions": [
+          "¿Qué hay hoy?",
+          "¿Puedo sentarme aquí?",
+          "¿Tienen vegetariano?",
+          "¿Qué es eso?",
+          "¿Está caliente?"
+        ],
+        "answers": [
+          "Sí por favor",
+          "No gracias",
+          "Un poquito",
+          "Está rico",
+          "No me gusta"
+        ],
+        "comments": [
+          "Está buena la comida",
+          "Hoy no me gustó",
+          "Tenía mucha hambre",
+          "Ya comí todo",
+          "Gracias"
+        ],
+        "emotions": [
+          "Tengo hambre",
+          "Estoy satisfecho",
+          "No me gusta la comida de hoy",
+          "Me gusta sentarme con mis amigos"
+        ],
+        "emergency": [
+          "Me atraganto",
+          "Soy alérgico",
+          "Me caí mi comida",
+          "Necesito ayuda"
+        ],
+        "social": [
+          "¿Me puedo sentar aquí?",
+          "¿Qué tienes de almuerzo?",
+          "¿Me das un poco?",
+          "¡Que rico!",
+          "Comamos juntos"
+        ]
+      }
+    },
+    {
+      "id": "centro_comercial",
+      "title": "Centro Comercial",
+      "category": "social",
+      "imagePlaceholder": "mall",
+      "sections": {
+        "phrases": [
+          "Quiero entrar a esta tienda",
+          "Quiero ver ropa",
+          "Quiero ver zapatos",
+          "Necesito el baño",
+          "Estoy cansado",
+          "Quiero sentarme",
+          "Ya quiero irme",
+          "Tengo hambre",
+          "Me perdí"
+        ],
+        "questions": [
+          "¿Dónde está el baño?",
+          "¿Cuánto cuesta?",
+          "¿Tienen mi talla?",
+          "¿Dónde está la salida?",
+          "¿Hay rampa?",
+          "¿Aceptan tarjeta?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Me lo llevo",
+          "Solo estoy viendo",
+          "Gracias",
+          "No gracias"
+        ],
+        "comments": [
+          "Me gusta",
+          "No me gusta",
+          "Está muy caro",
+          "Está bonito",
+          "Es mi favorito"
+        ],
+        "emotions": [
+          "Estoy emocionado",
+          "Hay mucha gente",
+          "Estoy abrumado",
+          "Me siento bien",
+          "Estoy cansado"
+        ],
+        "emergency": [
+          "Me perdí",
+          "No encuentro a mi familia",
+          "Necesito ayuda",
+          "Llamen a seguridad"
+        ],
+        "social": [
+          "Disculpe",
+          "¿Me puede ayudar?",
+          "Gracias",
+          "¿Hay algo en descuento?",
+          "Buenos días"
+        ]
+      }
+    },
+    {
+      "id": "cine",
+      "title": "Cine",
+      "category": "ocio",
+      "imagePlaceholder": "cinema",
+      "sections": {
+        "phrases": [
+          "Quiero ver una película",
+          "Dos boletos por favor",
+          "Quiero palomitas",
+          "Quiero refresco",
+          "¿Dónde me siento?",
+          "Está muy oscuro",
+          "Está muy ruidoso",
+          "La película empezó",
+          "Me gustó mucho",
+          "No me gustó"
+        ],
+        "questions": [
+          "¿A qué hora empieza?",
+          "¿Cuánto cuesta?",
+          "¿Es para niños?",
+          "¿Tiene subtítulos?",
+          "¿Dónde está el baño?",
+          "¿Cuánto dura?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Sala 3",
+          "Fila del medio",
+          "Gracias"
+        ],
+        "comments": [
+          "Me encantó",
+          "Estuvo chistosa",
+          "Me dio miedo",
+          "Me aburrí",
+          "Quiero verla otra vez"
+        ],
+        "emotions": [
+          "Estoy emocionado",
+          "Me da miedo",
+          "Estoy feliz",
+          "Estoy aburrido",
+          "Es muy chistosa"
+        ],
+        "emergency": [
+          "Necesito salir",
+          "Está muy lleno",
+          "Me siento mal",
+          "Necesito ayuda"
+        ],
+        "social": [
+          "Silencio por favor",
+          "¿Ya empezó?",
+          "¿Te gustó?",
+          "Fue muy buena",
+          "Vamos a otra"
+        ]
+      }
+    },
+    {
+      "id": "aeropuerto",
+      "title": "Aeropuerto / Avión",
+      "category": "transporte",
+      "imagePlaceholder": "airport",
+      "sections": {
+        "phrases": [
+          "Tengo mi boleto",
+          "Necesito facturar mi maleta",
+          "¿Dónde está la puerta?",
+          "Ya tengo mi pase de abordar",
+          "Voy a México",
+          "Necesito silla de ruedas",
+          "Vuelo con asistencia especial",
+          "Ya me subí al avión",
+          "Llegamos",
+          "Necesito recoger mi maleta"
+        ],
+        "questions": [
+          "¿Dónde está la puerta?",
+          "¿A qué hora sale el vuelo?",
+          "¿Hay retraso?",
+          "¿Dónde es el equipaje?",
+          "¿Cuánto tarda el vuelo?",
+          "¿Hay comida en el avión?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Puerta 12",
+          "Tengo conexión",
+          "Voy solo",
+          "Voy con mi familia"
+        ],
+        "comments": [
+          "Buen vuelo",
+          "Llegué bien",
+          "Fue muy largo",
+          "Me mareé un poco",
+          "Todo bien"
+        ],
+        "emotions": [
+          "Estoy nervioso",
+          "Tengo miedo a volar",
+          "Estoy emocionado",
+          "Me siento mal",
+          "Ya quiero llegar"
+        ],
+        "emergency": [
+          "Necesito ayuda",
+          "Me siento muy mal",
+          "Necesito al médico del vuelo",
+          "Estoy teniendo una crisis",
+          "Llamen a la asistente"
+        ],
+        "social": [
+          "Buenos días",
+          "Mucho gusto",
+          "¿Puede ayudarme?",
+          "Gracias señorita",
+          "Hasta luego"
+        ]
+      }
+    },
+    {
+      "id": "carro",
+      "title": "Carro",
+      "category": "transporte",
+      "imagePlaceholder": "car",
+      "sections": {
+        "phrases": [
+          "Vamos en carro",
+          "Quiero música",
+          "Tengo calor",
+          "Abre la ventana",
+          "Me duele el estómago",
+          "¿Llegamos pronto?",
+          "Necesito parar",
+          "Tengo ganas de vomitar",
+          "Ya quiero bajarme",
+          "Quiero agua"
+        ],
+        "questions": [
+          "¿A dónde vamos?",
+          "¿Cuánto falta?",
+          "¿Ya llegamos?",
+          "¿Podemos parar?",
+          "¿Podemos poner otra canción?",
+          "¿Podemos comer algo?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Ya mero",
+          "Faltan 10 minutos",
+          "Ok",
+          "Ahorita"
+        ],
+        "comments": [
+          "Qué bonito paisaje",
+          "Hay mucho tráfico",
+          "Ya llegamos",
+          "Me dormí",
+          "Estuvo largo el viaje"
+        ],
+        "emotions": [
+          "Me mareo en el carro",
+          "Estoy aburrido",
+          "Estoy emocionado de llegar",
+          "Me gusta el viaje",
+          "Tengo sueño"
+        ],
+        "emergency": [
+          "Para el carro",
+          "Voy a vomitar",
+          "Necesito bajarme ya",
+          "Hay un accidente",
+          "Llama al 911"
+        ],
+        "social": [
+          "¿Podemos poner música?",
+          "¿Jugamos un juego?",
+          "Cuéntame algo",
+          "¿Podemos parar a comer?",
+          "Gracias por llevarme"
+        ]
+      }
+    },
+    {
+      "id": "parque",
+      "title": "Parque",
+      "category": "ocio",
+      "imagePlaceholder": "park",
+      "sections": {
+        "phrases": [
+          "Quiero en el columpio",
+          "Quiero en el resbaladero",
+          "Quiero correr",
+          "Quiero jugar en la arena",
+          "Tengo calor",
+          "Quiero agua",
+          "Me caí",
+          "Me lastimé",
+          "Quiero quedarme más",
+          "Ya quiero irme"
+        ],
+        "questions": [
+          "¿Puedo jugar?",
+          "¿Me empujas?",
+          "¿Jugamos juntos?",
+          "¿Dónde está el baño?",
+          "¿Puedo subir ahí?",
+          "¿Me esperas?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Claro",
+          "Aquí",
+          "Allá",
+          "Ahorita"
+        ],
+        "comments": [
+          "Qué divertido",
+          "Me gusta el parque",
+          "Quiero más tiempo",
+          "Estuvo chido",
+          "Fue muy divertido"
+        ],
+        "emotions": [
+          "Estoy emocionado",
+          "Me da miedo esa cosa",
+          "Me gusta mucho",
+          "Estoy cansado",
+          "Estoy feliz"
+        ],
+        "emergency": [
+          "Me lastimé",
+          "Me caí fuerte",
+          "Necesito ayuda",
+          "Me perdí",
+          "Llama a mi mamá"
+        ],
+        "social": [
+          "¿Cómo te llamas?",
+          "¿Quieres jugar conmigo?",
+          "¿Me prestas eso?",
+          "¡Ese es mío!",
+          "Fue un placer jugar contigo"
+        ]
+      }
+    },
+    {
+      "id": "deportes",
+      "title": "Deportes",
+      "category": "ocio",
+      "imagePlaceholder": "sports",
+      "sections": {
+        "phrases": [
+          "Quiero jugar",
+          "¿Puedo entrar al equipo?",
+          "Mi turno",
+          "Pasame la pelota",
+          "Me cansé",
+          "Necesito agua",
+          "Ganamos",
+          "Perdimos",
+          "¡Buen partido!",
+          "¡Goool!"
+        ],
+        "questions": [
+          "¿Cómo se juega?",
+          "¿Con quién juego?",
+          "¿Cuánto tiempo?",
+          "¿Cuál es el marcador?",
+          "¿Cuándo es el partido?",
+          "¿Gané?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Empate",
+          "Ganamos 3-1",
+          "Ya terminó",
+          "Otro juego"
+        ],
+        "comments": [
+          "Estuvo bien el partido",
+          "Me gustó mucho",
+          "La próxima vez gano",
+          "Buen juego",
+          "Eso no vale"
+        ],
+        "emotions": [
+          "Estoy emocionado",
+          "Estoy enojado",
+          "Me siento bien",
+          "Estoy cansado",
+          "Me da tristeza perder"
+        ],
+        "emergency": [
+          "Me lastimé",
+          "Me torcí el tobillo",
+          "Necesito al entrenador",
+          "Necesito un descanso"
+        ],
+        "social": [
+          "¡Buen trabajo equipo!",
+          "¡Ánimo!",
+          "Vas muy bien",
+          "¡Sí se puede!",
+          "¡Campeones!"
+        ]
+      }
+    },
+    {
+      "id": "juegos",
+      "title": "Juegos",
+      "category": "ocio",
+      "imagePlaceholder": "games",
+      "sections": {
+        "phrases": [
+          "Quiero jugar",
+          "Mi turno",
+          "Tu turno",
+          "Gané",
+          "Ganaste",
+          "Otra vez",
+          "No quiero jugar más",
+          "Eso no vale",
+          "Hiciste trampa",
+          "¡Bien!"
+        ],
+        "questions": [
+          "¿A qué jugamos?",
+          "¿Cómo se juega?",
+          "¿Quién va primero?",
+          "¿Cuántos puntos tengo?",
+          "¿Qué sigue?",
+          "¿Jugamos otra vez?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Yo primero",
+          "Tú primero",
+          "Los dos",
+          "Listo"
+        ],
+        "comments": [
+          "Qué divertido",
+          "Estuvo chido",
+          "Me gustó",
+          "Quiero ese juego",
+          "¿Otro?"
+        ],
+        "emotions": [
+          "Estoy emocionado",
+          "Me enojé",
+          "Estoy feliz",
+          "Me da pena perder",
+          "Es muy divertido"
+        ],
+        "emergency": [
+          "Necesito un descanso",
+          "Me siento mal",
+          "Para el juego",
+          "Necesito salir"
+        ],
+        "social": [
+          "¿Juegas conmigo?",
+          "¡Buen jugada!",
+          "Muy bien",
+          "¿Eres bueno?",
+          "Jugamos otro día"
+        ]
+      }
+    },
+    {
+      "id": "musica",
+      "title": "Música",
+      "category": "ocio",
+      "imagePlaceholder": "music",
+      "sections": {
+        "phrases": [
+          "Quiero escuchar música",
+          "Pon mi canción favorita",
+          "Sube el volumen",
+          "Baja el volumen",
+          "Quiero bailar",
+          "Me gusta esta canción",
+          "No me gusta esta canción",
+          "Otra vez la misma",
+          "Quiero tocar instrumento"
+        ],
+        "questions": [
+          "¿Cómo se llama la canción?",
+          "¿De quién es?",
+          "¿Puedo escoger?",
+          "¿Qué género es?",
+          "¿Me enseñas?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Es del artista X",
+          "Es pop",
+          "Es cumbia",
+          "Es corrido"
+        ],
+        "comments": [
+          "Qué bonita canción",
+          "Me encanta esta",
+          "No me gusta",
+          "Quiero más música",
+          "¡Que buena!"
+        ],
+        "emotions": [
+          "Me hace feliz",
+          "Me pone triste",
+          "Me relaja",
+          "Me da energía",
+          "Me emociona"
+        ],
+        "emergency": [
+          "Está muy ruidoso",
+          "Apaga la música",
+          "Me duelen los oídos",
+          "Para por favor"
+        ],
+        "social": [
+          "¿Conoces esta canción?",
+          "¿La cantamos juntos?",
+          "¿Bailamos?",
+          "Qué buen gusto musical",
+          "Toca algo para mí"
+        ]
+      }
+    },
+    {
+      "id": "cocina",
+      "title": "Cocina",
+      "category": "casa",
+      "imagePlaceholder": "kitchen",
+      "sections": {
+        "phrases": [
+          "Quiero cocinar",
+          "Ayúdame",
+          "Mezcla esto",
+          "Corta aquí",
+          "Prende la estufa",
+          "Apaga el horno",
+          "Ya está listo",
+          "Huele rico",
+          "Prueba esto",
+          "Necesito un ingrediente"
+        ],
+        "questions": [
+          "¿Qué hacemos hoy?",
+          "¿Cuánto tiempo?",
+          "¿Cuánto le pongo?",
+          "¿Está listo?",
+          "¿Qué me falta?",
+          "¿Cómo lo hago?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Un poco más",
+          "Ya está",
+          "Cinco minutos",
+          "Un vaso"
+        ],
+        "comments": [
+          "Está delicioso",
+          "Falta sal",
+          "Está muy picante",
+          "Quedó muy bien",
+          "Me gusta cocinar"
+        ],
+        "emotions": [
+          "Me gusta cocinar",
+          "Tengo hambre",
+          "Estoy orgulloso",
+          "Me equivoqué",
+          "Está quemado"
+        ],
+        "emergency": [
+          "Se quema",
+          "Me quemé",
+          "Hay mucho humo",
+          "Apaga el fuego",
+          "Llama a alguien"
+        ],
+        "social": [
+          "Cocinemos juntos",
+          "Te enseño",
+          "Sígueme los pasos",
+          "Prueba esto",
+          "¿Está bueno?"
+        ]
+      }
+    },
+    {
+      "id": "familia",
+      "title": "Familia",
+      "category": "social",
+      "imagePlaceholder": "family",
+      "sections": {
+        "phrases": [
+          "Te quiero",
+          "Extraño a la abuela",
+          "Quiero hablar con papá",
+          "¿Dónde está mi hermano?",
+          "Vamos juntos",
+          "Estoy con mi familia",
+          "Me siento seguro",
+          "Quiero un abrazo",
+          "Dame un beso"
+        ],
+        "questions": [
+          "¿Dónde están?",
+          "¿Cuándo regresan?",
+          "¿Puedo ir con ustedes?",
+          "¿Cómo estás mamá?",
+          "¿Cómo estuvo tu día?",
+          "¿Me quieres?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Claro",
+          "Te quiero mucho",
+          "Siempre",
+          "Aquí estoy"
+        ],
+        "comments": [
+          "Mi familia es lo mejor",
+          "Los extraño",
+          "Estoy feliz con ustedes",
+          "Me siento seguro",
+          "Gracias por todo"
+        ],
+        "emotions": [
+          "Te quiero",
+          "Los extraño",
+          "Me siento feliz",
+          "Estoy triste sin ti",
+          "Me siento protegido"
+        ],
+        "emergency": [
+          "Necesito a mi familia",
+          "Estoy solo",
+          "Llamen a mi mamá",
+          "Necesito ayuda"
+        ],
+        "social": [
+          "¡Hola familia!",
+          "¿Cómo están todos?",
+          "Cuéntenme",
+          "¡Bienvenidos!",
+          "¡Los quiero!"
+        ]
+      }
+    },
+    {
+      "id": "mascotas",
+      "title": "Mascotas",
+      "category": "casa",
+      "imagePlaceholder": "pets",
+      "sections": {
+        "phrases": [
+          "Mi perro tiene hambre",
+          "Mi gato quiere agua",
+          "Quiero acariciar al perro",
+          "El perro me mordió",
+          "Hay que bañar al perro",
+          "Mi mascota está enferma",
+          "Vamos al veterinario",
+          "Quiero un animal"
+        ],
+        "questions": [
+          "¿Cómo se llama?",
+          "¿Muerde?",
+          "¿Puedo acariciarlo?",
+          "¿Qué come?",
+          "¿Es tu mascota?",
+          "¿Está vacunado?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Se llama Fido",
+          "Es muy amistoso",
+          "No muerde",
+          "Sí está vacunado"
+        ],
+        "comments": [
+          "Qué bonito",
+          "Me da miedo",
+          "Es muy tierno",
+          "Me quiere",
+          "Es mi mejor amigo"
+        ],
+        "emotions": [
+          "Me gusta mucho",
+          "Me da un poco de miedo",
+          "Lo quiero mucho",
+          "Me pone feliz",
+          "Estoy preocupado por él"
+        ],
+        "emergency": [
+          "Me mordió",
+          "El perro escapó",
+          "Mi mascota está mal",
+          "Necesitamos al veterinario"
+        ],
+        "social": [
+          "¿Tienes mascota?",
+          "¿La cuidas tú?",
+          "Es muy linda tu mascota",
+          "¿Cómo la cuidas?",
+          "¿Podemos pasearla?"
+        ]
+      }
+    },
+    {
+      "id": "recamara",
+      "title": "Recámara",
+      "category": "casa",
+      "imagePlaceholder": "bedroom",
+      "sections": {
+        "phrases": [
+          "Quiero dormir",
+          "Tengo sueño",
+          "Apaga la luz",
+          "Prende la luz",
+          "Necesito mi cobija",
+          "Tengo frío",
+          "Tengo calor",
+          "Quiero un cuento",
+          "Ya me dormí",
+          "Buenos días"
+        ],
+        "questions": [
+          "¿Qué hora es?",
+          "¿Es de noche?",
+          "¿Puedes quedarte?",
+          "¿Me lees un cuento?",
+          "¿Ya es de día?",
+          "¿Cuándo me levanto?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Son las 8",
+          "Ya es de día",
+          "Todavía es de noche",
+          "Ahorita"
+        ],
+        "comments": [
+          "Me siento cómodo",
+          "No puedo dormir",
+          "Tuve una pesadilla",
+          "Dormí bien",
+          "Me siento descansado"
+        ],
+        "emotions": [
+          "Tengo sueño",
+          "Estoy tranquilo",
+          "Tengo miedo a la oscuridad",
+          "Me siento seguro",
+          "Estoy nervioso"
+        ],
+        "emergency": [
+          "Tuve una pesadilla",
+          "Escuché un ruido",
+          "Necesito ayuda",
+          "No me siento bien"
+        ],
+        "social": [
+          "Buenas noches",
+          "Dulces sueños",
+          "Te quiero mucho",
+          "Hasta mañana",
+          "Gracias por el cuento"
+        ]
+      }
+    },
+    {
+      "id": "celebraciones",
+      "title": "Celebraciones",
+      "category": "social",
+      "imagePlaceholder": "celebration",
+      "sections": {
+        "phrases": [
+          "¡Feliz cumpleaños!",
+          "¡Feliz Navidad!",
+          "¡Feliz Año Nuevo!",
+          "¡Feliz día de las madres!",
+          "Quiero pastel",
+          "Quiero abrir mis regalos",
+          "Me encantó mi regalo",
+          "Gracias por el regalo",
+          "Quiero bailar",
+          "¡Que viva!"
+        ],
+        "questions": [
+          "¿De quién es el cumpleaños?",
+          "¿Qué festejamos?",
+          "¿Cuándo apagamos las velas?",
+          "¿Puedo pedir un deseo?",
+          "¿Cuándo abrimos los regalos?",
+          "¿Hay globos?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Es mi cumpleaños",
+          "Es Navidad",
+          "Ahorita",
+          "Ya mero"
+        ],
+        "comments": [
+          "Qué bonita fiesta",
+          "Hay mucha gente",
+          "Está muy divertido",
+          "Me gustó mucho",
+          "Gracias a todos"
+        ],
+        "emotions": [
+          "Estoy muy emocionado",
+          "Me siento especial",
+          "Estoy feliz",
+          "Hay mucho ruido",
+          "Estoy abrumado"
+        ],
+        "emergency": [
+          "Necesito salir un momento",
+          "Hay demasiada gente",
+          "Me siento abrumado",
+          "Necesito tranquilizarme"
+        ],
+        "social": [
+          "¡Felicidades!",
+          "¡Salud!",
+          "¡Que te vaya bien!",
+          "Muchas gracias por venir",
+          "¡Nos vemos en el próximo!"
+        ]
+      }
+    },
+    {
+      "id": "bano_necesidades",
+      "title": "Baño / Necesidades",
+      "category": "casa",
+      "imagePlaceholder": "bathroom",
+      "sections": {
+        "phrases": [
+          "Necesito ir al baño",
+          "Tengo ganas",
+          "Ya me hice",
+          "Necesito papel",
+          "Necesito cambiarme",
+          "Necesito jabón",
+          "Quiero lavarme las manos",
+          "Ya terminé",
+          "Quiero bañarme",
+          "Necesito ayuda"
+        ],
+        "questions": [
+          "¿Dónde está el baño?",
+          "¿Está ocupado?",
+          "¿Me ayudas?",
+          "¿Hay papel?",
+          "¿Puedo entrar?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Está libre",
+          "Ya mero salgo",
+          "Aquí está",
+          "Listo"
+        ],
+        "comments": [
+          "Ya salgo",
+          "Gracias",
+          "Ya terminé",
+          "Me lavé las manos",
+          "Ya estoy limpio"
+        ],
+        "emotions": [
+          "Tengo urgencia",
+          "Estoy incómodo",
+          "Ya me siento mejor",
+          "Necesito ayuda",
+          "Me da pena"
+        ],
+        "emergency": [
+          "Urgente",
+          "No puedo esperar",
+          "Necesito ayuda ahora",
+          "Hay un problema"
+        ],
+        "social": [
+          "¿Puedo pasar?",
+          "Gracias",
+          "Ya salgo",
+          "Disculpe",
+          "Un momento"
+        ]
+      }
+    },
+    {
+      "id": "llamadas",
+      "title": "Llamadas Telefónicas",
+      "category": "comunicacion",
+      "imagePlaceholder": "phone_call",
+      "sections": {
+        "phrases": [
+          "Quiero hacer una llamada",
+          "Llamen a mi mamá",
+          "Marca este número",
+          "Pon en altavoz",
+          "No escucho bien",
+          "Se cortó la llamada",
+          "Vuelve a marcar",
+          "Ya colgué",
+          "Manda un mensaje"
+        ],
+        "questions": [
+          "¿Quién llama?",
+          "¿Cuál es el número?",
+          "¿Está disponible?",
+          "¿Me puedes escuchar?",
+          "¿Qué dijiste?",
+          "¿Puedes repetir?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Un momento",
+          "Espera",
+          "Está ocupado",
+          "No contesta"
+        ],
+        "comments": [
+          "Hablé con mamá",
+          "No contestó",
+          "Quedamos en vernos",
+          "Me avisó algo importante",
+          "Fue una buena llamada"
+        ],
+        "emotions": [
+          "Quiero hablar con alguien",
+          "Extraño a mi familia",
+          "Estoy nervioso de llamar",
+          "Me alegró escucharlos",
+          "Estoy preocupado"
+        ],
+        "emergency": [
+          "Llamen al 911",
+          "Necesito llamar ahora",
+          "Es urgente",
+          "Llama a mi cuidador"
+        ],
+        "social": [
+          "Hola, ¿cómo estás?",
+          "¿Qué hay de nuevo?",
+          "Gracias por llamar",
+          "Hasta luego",
+          "Hablamos pronto"
+        ]
+      }
+    },
+    {
+      "id": "trabajo",
+      "title": "Trabajo",
+      "category": "social",
+      "imagePlaceholder": "work",
+      "sections": {
+        "phrases": [
+          "Buenos días",
+          "Hoy tengo trabajo",
+          "Necesito ayuda",
+          "Ya terminé",
+          "Necesito más tiempo",
+          "Tengo una junta",
+          "Salgo a las 5",
+          "Voy a comer",
+          "Tengo una pregunta",
+          "No entendí la tarea"
+        ],
+        "questions": [
+          "¿Qué hago hoy?",
+          "¿Me puede explicar?",
+          "¿Cuándo es la entrega?",
+          "¿Está bien así?",
+          "¿Necesitan algo más?",
+          "¿Puedo tomar un descanso?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Entendí",
+          "Necesito más tiempo",
+          "Ahí voy",
+          "Listo"
+        ],
+        "comments": [
+          "Buen trabajo",
+          "Ya lo entregué",
+          "Necesito apoyo",
+          "Tengo una condición que afecta mi habla",
+          "Uso un dispositivo para comunicarme"
+        ],
+        "emotions": [
+          "Estoy motivado",
+          "Estoy cansado",
+          "Estoy estresado",
+          "Me siento bien",
+          "Necesito ayuda"
+        ],
+        "emergency": [
+          "Necesito ayuda urgente",
+          "Tuve un accidente",
+          "Llamen a mi jefe",
+          "Hay una emergencia"
+        ],
+        "social": [
+          "Buenos días a todos",
+          "Mucho gusto",
+          "¿Cómo le fue?",
+          "Hasta mañana",
+          "Buen fin de semana"
+        ]
+      }
+    },
+    {
+      "id": "charla_breve",
+      "title": "Charla Breve",
+      "category": "social",
+      "imagePlaceholder": "small_talk",
+      "sections": {
+        "phrases": [
+          "Hola",
+          "¿Cómo estás?",
+          "Estoy bien",
+          "Hasta luego",
+          "Nos vemos",
+          "Buen día",
+          "¿Qué tal?",
+          "Todo bien",
+          "Cuídate",
+          "Un placer"
+        ],
+        "questions": [
+          "¿Cómo te llamas?",
+          "¿De dónde eres?",
+          "¿Qué haces?",
+          "¿Tienes familia?",
+          "¿Te gusta el clima?",
+          "¿Qué opinas?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Claro",
+          "No sé",
+          "Tal vez",
+          "Depende"
+        ],
+        "comments": [
+          "Qué interesante",
+          "Cuéntame más",
+          "Entiendo",
+          "Muy bien",
+          "Me alegra escucharlo"
+        ],
+        "emotions": [
+          "Me da gusto verte",
+          "Estoy bien gracias",
+          "Tengo un buen día",
+          "Estoy cansado",
+          "Estoy de buen humor"
+        ],
+        "emergency": [
+          "Necesito ayuda para comunicarme",
+          "Espera un momento",
+          "Uso un dispositivo",
+          "Por favor ten paciencia"
+        ],
+        "social": [
+          "Mucho gusto",
+          "El gusto es mío",
+          "Hasta pronto",
+          "Fue un placer",
+          "Nos vemos pronto"
+        ]
+      }
+    },
+    {
+      "id": "emergencias",
+      "title": "Emergencias",
+      "category": "salud",
+      "imagePlaceholder": "emergency",
+      "sections": {
+        "phrases": [
+          "¡Auxilio!",
+          "Necesito ayuda",
+          "Llama al 911",
+          "Es una emergencia",
+          "Estoy en peligro",
+          "Me lastimé",
+          "No puedo respirar",
+          "Me duele el pecho",
+          "Estoy sangrando",
+          "Me caí"
+        ],
+        "questions": [
+          "¿Dónde estoy?",
+          "¿Quién puede ayudarme?",
+          "¿Ya viene la ambulancia?",
+          "¿Cuánto tardan?",
+          "¿Hay un médico cerca?",
+          "¿Qué hago?"
+        ],
+        "answers": [
+          "Sí",
+          "No",
+          "Estoy aquí",
+          "En la calle X",
+          "Ya viene ayuda",
+          "Estoy solo"
+        ],
+        "comments": [
+          "Gracias por ayudarme",
+          "Ya llegó la ayuda",
+          "Me siento mejor",
+          "Estoy asustado",
+          "Necesito a mi familia"
+        ],
+        "emotions": [
+          "Tengo mucho miedo",
+          "Estoy desesperado",
+          "Estoy en shock",
+          "Estoy asustado",
+          "Necesito calmarme"
+        ],
+        "emergency": [
+          "¡Es urgente!",
+          "Llamen una ambulancia",
+          "Necesito el 911",
+          "Por favor ayúdenme",
+          "Hay heridos"
+        ],
+        "social": [
+          "Por favor",
+          "Gracias por su ayuda",
+          "¿Puede quedarse conmigo?",
+          "Soy una persona con discapacidad",
+          "Mi cuidador es..."
+        ]
+      }
+    }
+  ]
+}
