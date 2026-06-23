@@ -126,17 +126,11 @@ class _BoardsScreenState extends ConsumerState<BoardsScreen> {
           ),
           const SizedBox(height: 8),
           Text(
-            'Crea uno para empezar.',
+            'Pulsa el botón + para crear uno.',
             style: Theme.of(context)
                 .textTheme
                 .bodyMedium
                 ?.copyWith(color: AppColors.grey500),
-          ),
-          const SizedBox(height: 24),
-          ElevatedButton.icon(
-            onPressed: () => context.push('/boards/create'),
-            icon: const Icon(Icons.add),
-            label: const Text('Crear tablero'),
           ),
         ],
       ),

@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
 import 'package:habla/services/ai/ai_service.dart';
+import 'package:habla/services/tts/system_tts_engine.dart';
 import 'package:habla/services/tts/tts_engine.dart';
 import 'package:habla/state/providers/board_provider.dart';
 import 'package:habla/state/providers/profile_provider.dart';
@@ -99,8 +100,12 @@ class MessageBarState {
 /// Provider for the AI service instance.
 final aiServiceProvider = Provider<AiService>((ref) => StubAiService());
 
-/// Provider for the TTS engine instance.
-final ttsEngineProvider = Provider<TtsEngine?>((ref) => null);
+/// Singleton TTS engine — initialized lazily on first speak.
+final ttsEngineProvider = Provider<TtsEngine>((ref) {
+  final engine = SystemTtsEngine();
+  ref.onDispose(engine.dispose);
+  return engine;
+});
 
 // ---------------------------------------------------------------------------
 // MessageBarNotifier
@@ -176,11 +181,7 @@ class MessageBarNotifier extends StateNotifier<MessageBarState> {
 
   Future<void> speak() async {
     if (state.fullMessage.isEmpty) return;
-    final engine = _ref.read(ttsEngineProvider);
-    if (engine != null) {
-      await engine.speak(state.fullMessage);
-    }
-    // Record in history.
+    await _ref.read(ttsEngineProvider).speak(state.fullMessage);
     final entry = MessageHistoryEntry(
       id: const Uuid().v4(),
       text: state.fullMessage,
@@ -191,10 +192,7 @@ class MessageBarNotifier extends StateNotifier<MessageBarState> {
   }
 
   Future<void> speakWord(String word) async {
-    final engine = _ref.read(ttsEngineProvider);
-    if (engine != null) {
-      await engine.speak(word);
-    }
+    await _ref.read(ttsEngineProvider).speak(word);
   }
 }
 

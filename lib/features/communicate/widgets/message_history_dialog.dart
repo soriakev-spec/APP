@@ -88,11 +88,7 @@ class MessageHistoryDialog extends ConsumerWidget {
                         final entry = history[index];
                         return _HistoryEntryTile(
                           entry: entry,
-                          onSpeak: () async {
-                            if (ttsEngine != null) {
-                              await ttsEngine.speak(entry.text);
-                            }
-                          },
+                          onSpeak: () => ttsEngine.speak(entry.text),
                           onCopy: () {
                             Navigator.of(context).pop();
                             ScaffoldMessenger.of(context).showSnackBar(

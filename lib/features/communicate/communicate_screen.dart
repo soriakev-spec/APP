@@ -93,26 +93,22 @@ class CommunicateScreen extends ConsumerWidget {
     }
     if (activeCategory == '_search') return vocab;
 
-    // Map category tab ids to fitzgerald / category strings
-    final map = {
-      'Comida': 'Comida',
-      'Acciones': 'Acciones',
-      'Gente': 'Gente',
-      'Lugares': 'Lugares',
-      'Sentir': 'Sentir',
-      'Charla': 'Charla',
-      'Necesidades': 'Necesidades',
-      'Objetos': 'Objetos',
-      'Rutinas': 'Rutinas',
-      'Cuerpo': 'Cuerpo',
+    // Map Spanish tab labels to JSON category IDs (English)
+    const tabToCategory = {
+      'Comida':      'food',
+      'Acciones':    'actions',
+      'Gente':       'people',
+      'Lugares':     'places',
+      'Sentir':      'feelings',
+      'Charla':      'chat',
+      'Necesidades': 'needs',
+      'Objetos':     'objects',
+      'Rutinas':     'routines',
+      'Cuerpo':      'body',
     };
-    final target = map[activeCategory];
+    final target = tabToCategory[activeCategory];
     if (target == null) return vocab;
-    return vocab
-        .where((v) =>
-            v.category.toLowerCase() == target.toLowerCase() ||
-            v.subcategory?.toLowerCase() == target.toLowerCase())
-        .toList();
+    return vocab.where((v) => v.category == target).toList();
   }
 
   void _showItemContextMenu(

@@ -3,6 +3,7 @@
 
 import 'dart:convert';
 
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
@@ -247,8 +248,10 @@ final activeBoardForProfileProvider = Provider<BoardEntity?>((ref) {
 /// All boards belonging to the currently selected profile.
 final boardsForCurrentProfileProvider =
     StateNotifierProvider<BoardsNotifier, List<BoardEntity>>((ref) {
-  final profileId = ref.watch(currentProfileIdProvider);
-  return BoardsNotifier(profileId: profileId);
+  // Use currentProfileDataProvider so the fallback (first profile) is included
+  // even when currentProfileIdProvider is still null on first launch.
+  final profile = ref.watch(currentProfileDataProvider);
+  return BoardsNotifier(profileId: profile?.id);
 });
 
 /// Vocabulary items for the currently active board.
@@ -338,7 +341,27 @@ class BoardsNotifier extends StateNotifier<List<BoardEntity>> {
 class VocabularyNotifier extends StateNotifier<List<VocabularyItemEntity>> {
   final BoardEntity? board;
 
-  VocabularyNotifier({required this.board}) : super([]);
+  VocabularyNotifier({required this.board}) : super([]) {
+    _loadFromAsset();
+  }
+
+  Future<void> _loadFromAsset() async {
+    try {
+      final jsonStr = await rootBundle.loadString('assets/data/vocabulary.json');
+      final data = jsonDecode(jsonStr) as Map<String, dynamic>;
+      final categories = data['categories'] as List<dynamic>;
+      final items = <VocabularyItemEntity>[];
+      for (final cat in categories) {
+        final catItems = cat['items'] as List<dynamic>;
+        items.addAll(
+          catItems.map((e) => VocabularyItemEntity.fromJson(e as Map<String, dynamic>)),
+        );
+      }
+      if (mounted) state = items;
+    } catch (_) {
+      // Keep empty state on parse error
+    }
+  }
 
   Future<void> add(VocabularyItemEntity item) async {
     state = [...state, item];
